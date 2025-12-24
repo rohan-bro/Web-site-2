@@ -1,0 +1,317 @@
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8b0000; /* Beige background */
+    color: #e0fff; /* Dark slate gray text */
+}
+
+header {
+    background-color: #355e35; /* Saddle brown */
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-image: url('https://via.placeholder.com/1200x400?text=Old+Money+Background');
+    background-size: cover;
+    color: #fff;
+}
+
+.btn {
+    background-color: #daa520; /* Goldenrod */
+    color: #000;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.products {
+    padding: 2rem;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.about, .contact {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #8b4513;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+.buy-now-btn {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer; /* মাউস নিলে হাতের চিহ্ন আসবে */
+}
+.logo img {
+    max-height: 50px;
+}
+.product img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* --- About Page Specific Styles --- */
+.about-hero {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 50px;
+}
+
+.about-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    background-color: #f4f4f4;
+}
+
+.philosophy-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.philosophy-card {
+    flex: 1;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.philosophy-card h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* Footer Style */
+.modern-footer {
+    padding: 40px;
+    text-align: center;
+    border-top: 1px solid #eee;
+    font-size: 12px;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    .philosophy-section {
+        flex-direction: column;
+    }
+}
+
+/* --- Contact Page Modern Styles --- */
+.contact-modern {
+    padding: 80px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact-header h1 {
+    font-size: 48px;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+}
+
+.contact-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+}
+
+.detail-box {
+    margin-bottom: 40px;
+}
+
+.detail-box h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.detail-box p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.wa-contact-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Form Styling */
+.modern-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #000;
+    background-color: #fff;
+}
+
+.submit-btn {
+    padding: 18px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #333;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .contact-grid-container {
+        grid-template-columns: 1fr;
+    }
+    .contact-header h1 {
+        font-size: 32px;
+    }
+}
+
